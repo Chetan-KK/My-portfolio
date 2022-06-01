@@ -1,9 +1,12 @@
 {
+  "homepage":"http://Chetan-KK.github.io/My-portfolio",
   "name": "webpack-three-js-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack-dev-server --config ./bundler/webpack.dev.js"
   },
@@ -17,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/brunosimon/webpack-three-js-template/issues"
   },
-  "homepage": "https://github.com/brunosimon/webpack-three-js-template#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
